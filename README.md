@@ -10,17 +10,27 @@ Ambientサーバー　ー　インターネット　ー　WiFiルーター　セ
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　∟　SCD41モジュール
 
 
-# **3．セットアップ方法**
-ArduinoIDEで以下のプログラムを開き、以下を設定する。
+# **3．プログラムの書き込み(M5StickCPlus)**
+ArduinoIDEで以下のプログラム(M5StatikC_SHT35Ambient_v4.ino)を開き、以下を設定する。
 
+使用するライブラリ
 
 SHT35(https://github.com/Seeed-Studio/Seeed_SHT35)
 
 SCD41(https://github.com/DFRobot/DFRobot_SCD4X)
 
+Ambient(https://github.com/AmbientDataInc/Ambient_ESP8266_lib)
+
+
 WiFiルーターのSSIDとパスワードを入力。
 
-M5StatikC_SHT35Ambient_v4.ino
-
 30行目　#define WIFISSID "***************"  // ルーターのSSID
+
 31行目　#define WIFIPASS "***************"  // ルーターのパスワード
+
+
+Ambientのアカウント作成とチャネルIDを取得し以下を設定
+
+35行目　uint32_t channelId = *****;                 // AmbientのチャネルID
+
+36行目　const char* writeKey = "****************";  // AmbientのチャネルIDのライトキー
