@@ -9,7 +9,6 @@
 #include "Ambient.h"
 
 //SHT35(https://github.com/Seeed-Studio/Seeed_SHT35)
-//#include <Wire.h>
 #include <Seeed_SHT35.h>
 
 #define SDAPIN 32
@@ -27,8 +26,8 @@ DFRobot_SCD4X SCD4X(&Wire, /*i2cAddr = */ SCD4X_I2C_ADDR);  //'0x62'
 WiFiClient client;
 
 // //ルーター設定
-#define WIFISSID "***************"                                                      // ルーターのSSID
-#define WIFIPASS "***********************************"  //PSK ハッシュ値256bitのキー(https://mascii.github.io/wpa-psk-calc/)
+#define WIFISSID "***************"  // ルーターのSSID
+#define WIFIPASS "***************"  //PSK ハッシュ値256bitのキー(https://mascii.github.io/wpa-psk-calc/)
 
 //Ambient
 Ambient ambient;
