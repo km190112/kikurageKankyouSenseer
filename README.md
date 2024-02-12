@@ -6,11 +6,10 @@ Ambientサーバーに保存後、スマホなどのモバイル端末で確認�
 
 
 # **２．システム構成**
-Ambientサーバー　ー　インターネット　ー　WiFiルーター　センサ送信機(M5StickCPlus)　－　SHT35モジュール
-
-                                                                                 ∟　SCD41モジュール
+Ambientサーバー　ー　インターネット　ー　WiFiルーター　センサ送信機(M5StickCPlus)　－　SHT35モジュール+SCD41モジュール
 
 ![kankyoSenser](https://github.com/km190112/kikurageKankyouSenseer/assets/46617422/76a97617-11c4-4df0-ac96-0c0b757eb553)
+
 
 
 # **3．プログラムの書き込み(M5StickCPlus)**
