@@ -1,8 +1,8 @@
 /**************************************
   温湿度とCO2のセンサから取得した情報をAmbientサーバーにデータを送る　　　
  **************************************/
-
-// XIAO_ESP32C3
+// デバイスはXIAO_ESP32C3
+// SHT41とSCD41を接続する。
 
 // Anbient
 #include <WiFi.h>
@@ -21,18 +21,14 @@ DFRobot_SCD4X SCD4X(&Wire, /*i2cAddr = */ SCD4X_I2C_ADDR);  //'0x62'
 WiFiClient client;
 
 // //ルーター設定
-#define WIFISSID "Rakuten-49D9"                                                      // ルーターのSSID
-#define WIFIPASS "7a6c1ec75136357af3e9b5228b303cf81403855e4c2e55bc757281d8b118f5fb"  //PSK ハッシュ値256bitのキー(https://mascii.github.io/wpa-psk-calc/)
-// #define WIFISSID "Buffalo-G-A240"
-// #define WIFIPASS "973e5dbed444a545626dfdbc3ad041514ba2c4cd5e781220e7b0d68ab310e399"
+#define WIFISSID "*************"                                                      // ルーターのSSID
+#define WIFIPASS "******************************"  //PSK ハッシュ値256bitのキー(https://mascii.github.io/wpa-psk-calc/)
+
 
 //Ambient
 Ambient ambient;
-uint32_t channelId = 63513;                 // AmbientのチャネルID 弘源堂1
-const char* writeKey = "83c534ad38a2f650";  // ライトキー
-
-// unsigned int channelId = 64437;             // AmbientのチャネルID  弘源堂2
-// const char* writeKey = "65ccc35e89245be3";  // ライトキー
+uint32_t channelId = 12345;                 // AmbientのチャネルID
+const char* writeKey = "**************";  // ライトキー
 
 #define TIME_TO_SLEEP 900  // 測定周期（秒）
 // #define TIME_TO_SLEEP 180  // 測定周期（秒）
