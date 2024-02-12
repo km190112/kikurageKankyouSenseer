@@ -9,7 +9,8 @@ Ambientサーバーに保存後、スマホなどのモバイル端末で確認�
 Ambientサーバー　ー　インターネット　ー　WiFiルーター　センサ送信機(M5StickCPlus)　－　SHT35モジュール+SCD41モジュール
 
 ![kankyoSenser](https://github.com/km190112/kikurageKankyouSenseer/assets/46617422/76a97617-11c4-4df0-ac96-0c0b757eb553)
-
+![IMG_2255](https://github.com/km190112/kikurageKankyouSenseer/assets/46617422/0f0c852d-727e-4e37-be93-196e2f5cefe6)
+![IMG_2105](https://github.com/km190112/kikurageKankyouSenseer/assets/46617422/c82ae2cf-1a71-4791-b107-c410e10478c1)
 
 
 # **3．プログラムの書き込み(M5StickCPlus)**
